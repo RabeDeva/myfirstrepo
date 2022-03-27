@@ -6,8 +6,8 @@ package my.balancer;
  * To be extended on further needs for DCGK token information ...
  */
 public final class DcgkHelper {
-		private final String dcgkRaw;
-		private final String dcgkDomain;
+		public final String dcgkRaw;
+		public final String dcgkDomain;
 		
 		public DcgkHelper(String datachunkgroupkey) {
 			this.dcgkRaw = datachunkgroupkey;
@@ -22,12 +22,5 @@ public final class DcgkHelper {
 			}
 			
 			this.dcgkDomain = domain;
-		}
-		
-		public String getDcgkRaw() {
-			return dcgkRaw;
-		}
-		public String getDcgkDomain() {
-			return dcgkDomain;
 		}
 	}
